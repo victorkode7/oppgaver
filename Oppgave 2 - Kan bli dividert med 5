@@ -1,0 +1,15 @@
+public class Program
+{
+	public static bool divisibleByFive(int n)
+	{
+		var resultat = n % 5 == 0 ? true : false;
+			// Her lager jeg ett nytt variabel. Jeg bruker "var" for dette, men "bool" fungerer også.
+			// "n % 5" % betyr "remainder" som er det du har igjen etter du har dividert nummeret med 5. f.eks. 25%5 = 0 fordi alle tallene blir "brukt".
+			//"== 0" sjekker om svaret er 0.
+			// "?" er en Ternary operator som fungerer som en if() funksjon. Den returnerer svaret til variablet den er laget i så lenge det er sant eller usant.
+		  // Syntax for ? operator er : boolean(true eller false)betingelse ? Hvis_sant : Hvis_usant;
+      
+    
+    return resultat;		//returnerer true eller false.
+	}
+}

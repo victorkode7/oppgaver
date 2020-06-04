@@ -1,0 +1,8 @@
+public class Program 
+{
+	public static bool Comp(string str1, string str2) 
+	{
+		var resultat = (str1.Length == str2.Length ? true : false); //Variabel som sjekker om string 1 og string 2 er like lange.
+		return resultat; Returnerer verdien som blir satt av "? operator".
+	}
+}

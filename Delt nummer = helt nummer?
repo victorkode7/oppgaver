@@ -1,0 +1,14 @@
+public class Program 
+{
+    public static bool dividesEvenly(int a, int b) 
+    {
+			bool svar; // Dette er bare så jeg skal skjønne det. Jeg lager først variablet for å holde styr på det. Det går ann å lage dette på neste linje.
+			svar = a % b == 0 ? true : false; 
+      //svar = (sier at svar er noe nytt)
+      // a % b (Remainder operator som sjekker om det er noe igjen etter du deler på et nummer. Eks.: 25/5 = 0, 25/4 = 1.
+      // == 0 ? (Er svaret 0 ? )
+      // true : false ( hvis det er sant returner 'true', hvis ikke returner 'false'.
+      
+			return svar; // Slutter funksjonen og returnerer svaret.
+		}
+}

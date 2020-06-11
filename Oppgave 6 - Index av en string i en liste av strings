@@ -1,0 +1,12 @@
+using System; // Bruker System Bibloteket
+public class Program
+{
+    public static int FindIndex(string[] arr, string str) 
+    {
+			int index = Array.IndexOf(arr, str); 
+      //int index =  Lager nytt index variabel )
+      //Array.IndexOf(arr, str) (Sjekker innenfor et array og leter etter 'str' innenfor 'arr'.
+			return index; 
+      //returnerer index.
+    }
+}

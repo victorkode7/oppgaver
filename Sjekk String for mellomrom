@@ -1,0 +1,10 @@
+public class Program
+{
+	public static bool HasSpaces(string str)
+	{
+		bool resultat = str.Contains(" "); 
+		// bool resultat = ( Lager et nytt boolean variabel som bare kan være SANT/USANT som heter "resultat")
+		// str.Contains(" "); Sjekker om teksten "str" inneholder mellomrom.
+		return resultat; // returnerer resultat
+		}
+	}

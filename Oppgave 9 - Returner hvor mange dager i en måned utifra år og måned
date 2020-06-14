@@ -1,0 +1,10 @@
+public class Program
+{
+    public static int Days(int month, int year)
+    {
+			int dagerimåned = System.DateTime.DaysInMonth(year, month);
+      // Ny int som sjekker hvor mange dager det er i en måned spesifisert med årstall go måned.
+			return dagerimåned;
+      // Returnerer resultatet.
+    }
+}

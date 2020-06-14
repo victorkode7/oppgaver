@@ -1,0 +1,28 @@
+public class Program
+{
+    public static bool DoubleLetters(string word)
+    {
+			bool resultat = false;
+      
+        //  Nytt sant/ussant variabel
+        
+			for(int i = 1; i < word.Length; i++){
+        
+        // Kjør for loopen for hvert symbol i ordet gitt
+      
+				resultat = word[i] == word[i-1] ? true : false;
+        
+        //  Er ordet i posisjon [i] lik som i - 1 ? 
+        //  Hvis det er det = true, hvis ikke = false;
+        
+				if (resultat == true){
+        
+        // Hvis resultatet er sant(hvis det er 2 bokstaver som er like ved siden av hverandre)
+					break;
+        // Gå ut av for loopen tidligere.
+				}
+			}
+			return resultat;
+        // Returner sant eller usant
+    }
+}

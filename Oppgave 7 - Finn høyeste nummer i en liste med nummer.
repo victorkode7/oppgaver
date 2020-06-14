@@ -1,0 +1,22 @@
+using System;
+public class Program
+    {
+        public static int FindLargestNum(int[] arr)
+        {
+					int nytt_nummer = 0; // Ny int med verdien 0.
+					for(int i = 0; i < arr.Length; i++){ 
+          
+          //for()                         Så lenge noe er sant
+          //int i = 0                     Er et nytt nummer som skal brukes for å bytte mellom tall v.h.a index
+          //i < arr.Length;               Dette er det som for loopen sjekker. Så lenge i er mindre enn antall nummer skal den loope
+          //i++                           Etter hver loop adderer den seg selv med 1
+          
+						nytt_nummer = arr[i] > nytt_nummer ? arr[i] : nytt_nummer;
+            
+            //arr[i] > nytt_nummer ?      Er tallet i posisjon [i] høyere enn det nytt_nummer er?
+            // arr[i] : nytt_nummer;      Hvis det er sant skal det nye nummeret være nytt_nummer, hvis ikke skal det være det det var.
+            
+					}	
+					return nytt_nummer; //          Avslutt og returner nytt_nummer.
+        }
+    }

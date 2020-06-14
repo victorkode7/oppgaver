@@ -1,0 +1,23 @@
+// Eks. Tall i enerplass på A * tall i enerplass på B = tall i enerplass på C ? Sant eller Usant.
+public class Program {
+	public static bool last_dig(int a, int b, int c) {
+		int nyttnummer1 = a % 10;
+                    // Finner rest av A delt på 10 v.h.a modulo
+		int nyttnummer2 = b % 10;
+                    // Finner samme for B
+		int nyttnummer3 = (nyttnummer1 * nyttnummer2) % 10;
+    
+                    //  Nytt tall som er  A * B i enerplass. svaret er også i enerplass. 
+    
+		bool resultat = (nyttnummer3 == c % 10) ? true : false;
+                    //  Sjekker om svaret på A * B i enerplass er lik C i sitt tall i enerplass. svarer sant/ussant
+		return resultat; // Returnerer resultat
+	}
+}
+
+                    // Slik tenkte jeg :
+                    // INPUT : 718 * 319 = 512  [8 * 9 = 2]
+                    // 718 * 319 = 72.
+                    // 72 % 10 = 2
+                    // 512 % 10 = 2
+                    // 2 = 2 ? returner sant.

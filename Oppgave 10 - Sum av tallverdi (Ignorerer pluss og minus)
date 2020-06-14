@@ -1,0 +1,19 @@
+using System;
+public class Program 
+{
+    public static int GetAbsSum(int[] arr) 
+    {
+			int resultat = 0;
+      
+      // Ny int veriabel
+      
+      for(int i = 0; i < arr.Length; i++){
+      
+      //Kjører for hvert nummer i listen.
+				resultat += Math.Abs(arr[i]);
+        // Endrer resultat til seg selv + tallverdien av tallet i posisjon [i]
+			}
+			return resultat;
+        // Returnerer summen når for loopen er ferdig.
+    }
+}

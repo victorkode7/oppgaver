@@ -1,0 +1,14 @@
+using System;
+public class Program
+{
+    public static bool isIdentical(string str)
+		{
+			bool resultat = true; // Nytt variabel.
+			for(int i = 0; i < str.Length; i++){
+      // Går gjennom hver bokstav i teksten.
+				resultat = str[i] != str[0] ? false : resultat;
+        //Endrer variablet resultat til ussant om bokstav i posisjon [i] ikke er samme som bokstaven i posisjon 0(starten).
+			}
+			return resultat; //Returnerer enten sant/ussant
+    }
+}
